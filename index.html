@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Portal</title>
+    <style>
+        body
+        {
+            font-family:Open Sans,sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            margin-left: 0%;
+            color: #505F79;
+        }
+        .banner
+        {
+            background-image: url("https://inazstgpfs3001.blob.core.windows.net/assets/demo-school-banner.png");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 29rem;
+            margin: 0%;
+            padding: 10px;
+            background-size: cover;
+            padding-top: 40px;
+            
+           
+        }
+        input
+        {
+            background-color: #FAFBFC;
+            border:1px solid gainsboro;
+            border-radius: 0.1rem;
+        }
+        .form-heading
+        {
+            color: #505F79;
+            font-size: 12px;
+            font-family: Open Sans,sans-serif;
+            font-weight: 400;
+            line-height: 1;
+            text-align: center;
+        }
+        .sign-in
+        {
+            font-weight: 400;
+            height: 25rem;
+            width: 23rem;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            margin-left: 62rem;
+            margin-right: 0.5rem;
+            margin-top: 10px;
+            padding: 40px;
+            background-color: #fff;
+            
+        }
+       
+        
+        .label-first-name::before
+        {
+         content:"*";
+            color: red;
+        }
+        .label-email::before
+        {
+            content:"*";
+            color: red;
+        }
+        .label-last-name::before
+        {
+            content:"*";
+            color: red;
+        }
+   
+        .imge a img
+        {
+            height: 64px;
+            width: 64px;
+
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+
+        }.link-1
+        {
+            text-align: center;
+        }
+        .first-name1,.last-name1
+        {
+            display: inline-block;
+        }
+        .first-name,.last-name
+        {
+            width: 10rem;
+            height: 1.25rem;
+        }
+        .last-name1
+        {
+            padding-left: 0.5rem;
+        }
+        .names
+        {
+            display: inline-block;
+            width: 100%;
+        }
+        .email,.phone,.year,.list
+        {
+            width: 21rem;
+            height: 1.25rem;
+            
+        }
+        .otp
+        {
+            height: 2rem;
+            background-color: white;
+            border:1px solid gainsboro;
+            border-radius: 0.1rem;
+            width: 3.5rem;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            margin-left: 77%;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="imge">
+            <a href="https://www.ken42.com/"><img src="https://inazstgpfs3001.blob.core.windows.net/assets/ken42_logo.png"></a> 
+
+        </div>
+    <br>
+   <div class="banner">
+        <form class="sign-in" action="response.html" >
+            <h4 class="form-heading">REGISTER</h4>
+
+            <div class="names">
+
+                <div class="first-name1">
+
+                    <label class="label-first-name" for="first-name">
+                        First Name
+                    </label>
+                    <br>
+                    <input type="text" class="first-name" name="first-name" id="first-name"  />
+        
+                </div>
+    
+    
+                <div class="last-name1">
+                    <label class="label-last-name" for="last-name">
+                        Last Name
+                    </label>
+                    <br>
+                    <input type="text" class="last-name" name="last-name" id="last-name"  />
+                </div>
+    
+            </div>
+<br>
+<div>
+    <br>
+</div>
+            <div>
+                <label class="label-email" for="email">
+                    Email Address
+                </label>
+              
+                <input type="email" class="email" name="email" id="email"  />
+            </div>
+            
+<br>
+            <div> 
+                <label class="label-phone" for="phone">
+                Mobile Number
+            </label>
+            <br>
+            <input type="tel" class="phone" name="phone" id="phone"  />
+            </div>
+           
+<br>
+            <div>
+                <label class="label-program" for="list">
+                    Academic Program
+                </label>
+                <br>
+                <input list="program-list" id="list" name="program-list" class="list">
+                <datalist id="program-list">
+                    <option value="GRADE I">
+                    <option value="GRADE II">
+                    <option value="GRADE III">
+                    <option value="GRADE IV">
+                    <option value="GRADE V">
+                    <option value="GRADE VI">
+                    <option value="GRADE VII">
+    
+                </datalist>
+            </div>
+
+          
+
+<br>
+            <div>
+                <label class="label-year" for="year">
+                    Academic Year
+                </label>
+                <br>
+                <input list="program-year" id="year" name="program-year" class="year">
+                <datalist id="program-year">
+                    <option value="2021">
+                    <option value="2020">
+                    <option value="2019">
+                    <option value="2018">
+                    <option value="2017">
+    
+                </datalist>
+    
+            </div>
+           
+<br>
+            <div>
+                <label class="label-otp" for="otp">
+                    <input type="submit" id="otp" name="otp" value="Get OTP" class="otp" >
+                </label>
+
+            </div>
+            
+           
+
+<br>
+<div class="link-1"><a  href="#" >Already Registered? Sign in</a>
+</form></div>
+
+    </div>
+    
+</body>
+</html>
